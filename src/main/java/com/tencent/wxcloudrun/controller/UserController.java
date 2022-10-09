@@ -18,7 +18,7 @@ public class UserController {
     @GetMapping("/getInfo")
     public R getInfo(String phone){
         User user = userMapper.getInfo(phone);
-        return R.ok().data("user",user);
+        return R.ok().data("user",user).message("okk");
     }
 
 }
